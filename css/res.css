@@ -1,13 +1,37 @@
 @charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
 html{
 	font-size: 100px;
-	color:#333;
+	color:#333;	
+}
+@font-face{
+	font-family: pingfang-h;
+	src: url('../font/PingFang\ Heavy.ttf');
+}
+@font-face{
+	font-family: pingfang-l;
+	src: url('../font/PingFang\ Light.ttf');
+}
+@font-face{
+	font-family: pingfang-r;
+	src: url('../font/PingFang\ Regular.ttf')
+}
+@font-face{
+	font-family: pingfang-m;
+	src: url('../font/PingFang\ Medium.ttf')
+}
+@font-face{
+	font-family: sy-r;
+	src: url('../font/System\ San\ Francisco\ Display\ Regular.ttf')
 }
 /*reset*/
-body {font-family: '微软雅黑'，"Helvetica Neue",Helvetica,STHeiTi,Arial,sans-serif;
+body {font-family: pingfang-h,pingfang-l,pingfang-r,pingfang-m,sy-r;
  margin: 0; padding: 0; -webkit-user-select: none;
 -webkit-text-size-adjust: none; outline: none; -webkit-tap-highlight-color: transparent;
-min-width: 320px;}
+}
 input, textarea { -webkit-user-select: text;outline: none;}
 textarea::-webkit-resizer{display: none}
 input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none;}

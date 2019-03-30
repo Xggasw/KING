@@ -1,17 +1,21 @@
-
-(function () {
-    var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
-    var timeoutId;
-    function setRem() {
-        var clientWidth = document.documentElement.clientWidth;
-        var nowPX = clientWidth / 375 * 100;
-        document.documentElement.style.fontSize = nowPX + 'px';
+$(function(){
+    function setRem(){
+        var clientWidth=$(window).width();
+        var uiwidth  = 375;
+        console.log(clientWidth);
+        var nowRem=(clientWidth/uiwidth*100);
+        $("html").css("font-size",parseInt(nowRem, 10)+"px");
     }
     setRem();
-    window.addEventListener(supportsOrientationChange, function () {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(function () {
+
+    var timer;
+    $(window).on("resize",function(){
+        clearTimeout(timer);
+        timer=setTimeout(function(){
             setRem();
-        }, 300);
-    }, false);
-})();
+        }, 100)
+    })
+
+
+});
+

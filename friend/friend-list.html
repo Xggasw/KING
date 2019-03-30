@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/res.css">
+    <link rel="stylesheet" href="./css/friend-list.css">
+</head>
+
+<body>
+    <div id="friend">
+        <header>
+            <div class="header-top">
+                <a href="../index.html"><img src="./friends-list-imgs/fanhui.png" alt=""></a>
+                <span>好友列表</span>
+                <a href="#"><img src="./friends-list-imgs/jiahaoyou.png" alt=""></a>
+            </div>
+            <div class="header-bottom">
+                <a href="">通讯录</a>
+                <input type="text">
+                <a href="./diom-fjhy.html">更多</a>
+                <a href="./diom-fjhy.html"><img src="./friends-list-imgs/gengduo.png" alt=""></a>
+            </div>
+        </header>
+        <div>
+            <ul class="friend-list">
+                <li class="content">
+                    <div class="touxiang">
+                        <img src="" alt="">
+                    </div>
+                    <div class="item">
+                        <p><span class="name">隔壁同桌</span><span class="time">06:53</span></p>
+                        <p>晚上游泳啊</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/zepto.js"></script>
+<script src="../js/zepto.touch.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/doT.js"></script>
+
+<script id="friend-list" type="text/x-dot-template">
+    {{~it:value:index}}
+        <li class="content">
+            <div class="touxiang">
+                <img src="{{=value.img}}" alt="">
+            </div>
+            <div class="item">
+                <p><span class="name">{{=value.name}}</span><span class="time">{{=value.time}}</span></p>
+                <p>{{=value.text}}</p>
+            </div>
+        </li>
+    {{~}}
+</script>
+<script>
+    $.ajax({
+        url: '../json/friend-list.json',
+        dataType: 'json',
+        type: 'get',
+        success: function (res) {
+            var friends = doT.template($('#friend-list').text());
+            $('.friend-list').html(friends(res));
+        }
+    })
+</script>
+<script>
+    $('.content').tap(function(){
+        window.location.href='./Flistdetails.html'
+    })
+</script>

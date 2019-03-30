@@ -1,0 +1,218 @@
+.main{
+    font-size: 0px;
+}
+.head{
+    width:100%;
+    height:1rem;
+    background:linear-gradient(to right,#D516FB,#9551F1);
+    box-sizing: border-box;
+    padding-top:.33rem;
+}
+.head>.head_nav{
+    width:100%;
+    height:.16rem;
+    line-height: .14rem;
+}
+.head>.head_nav a:first-child{
+    font-size: .24rem;
+    font-weight: 600;
+    font-family: "ºÚÌå";
+    float: left;
+    color: #fff;
+    margin-left:.14rem;
+
+}
+.head>.head_nav a>:nth-child(1) {
+width: .17rem;
+    height: .17rem;
+}
+.head>.head_nav>span{
+    float: left;
+    font-size:.18rem;
+    color: #dcdcdc;
+    font-weight: bold;
+    margin-left:1.4rem;
+}
+.head>.head_nav a:last-child{
+    float:right;
+    margin:-.26rem .14rem 0 0;
+    display:inline-block;
+    width:.17rem;
+    height: .17rem;
+}
+/*............................*/
+.container{
+    width: 100%;
+    height: 5.06rem;
+    background: #f8f8f8;
+    border-bottom: #e5e5e5 solid .01rem;
+}
+.list{
+    width: 90%;
+    height:4.25rem;
+    margin: auto;
+    transform: translateY(-.4rem);
+
+}
+.list_sizi{
+    width: 100%;
+    height: 1.87rem;
+    border-bottom: rgb(248,248,248) solid .05rem;
+    overflow: hidden;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.list_sizi>:nth-child(1){
+    width: .71rem;
+    height: .71rem;
+    float: left;
+    padding-left: .14rem;
+    overflow: hidden;
+    padding-top: .13rem;
+}
+.list_sizi>p:nth-child(2){
+    width: 2rem;
+    height: .3rem;
+    line-height: .3rem;
+    padding-top: .05rem;
+}
+.list_sizi>p:nth-child(3){
+    width: 2rem;
+    height: .3rem;
+    line-height: .3rem;
+    padding-top: .05rem;
+}
+.list_sizi>p:nth-child(2)>span{
+ font-size: .15rem;
+    float: left;
+    padding-left: .14rem;
+    color: rgb(51,51,51);
+    font-weight: bolder;
+    padding-top: .08rem;
+}
+.list_sizi>p:nth-child(2)>img{
+    width: .15rem;
+    height: .15rem;
+    float: left;
+    padding-left: .15rem;
+    padding-top: .15rem;
+}
+.list_sizi>p:nth-child(3)>span{
+    font-size: .15rem;
+    float: left;
+    padding-left: .14rem;
+    color: rgb(51,51,51);
+    font-weight: bolder;
+
+}
+.list_sizi>p:nth-child(3)>img{
+    width: .15rem;
+    height: .15rem;
+    float: left;
+    padding-left: .15rem;
+    padding-top: .08rem;
+}
+/*...............................*/
+.img_a{
+    padding-top: .35rem;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+.img_a>li{
+    width: 25%;
+    height: .65rem;
+    text-align: center;
+    font-size: .14rem;
+}
+.img_a>li>img{
+    width: .36rem;
+    height: .28rem;
+}
+.list_b{
+    width: 100%;
+    height: 2.4rem;
+    background: #ffffff;
+    list-style: none;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.list_b>li{
+    width: 100%;
+    height: .4rem;
+    border-bottom: rgb(248,248,248) solid .01rem;
+     overflow: hidden;
+    line-height: .4rem;
+}
+.list_b>li>img:nth-child(1){
+    width: .1rem;
+    height: .15rem;
+   float: left;
+    padding-top: .13rem;
+    padding-left: .05rem;
+}
+.list_b>li>span{
+    font-size: .14rem;
+    float: left;
+    font-weight: bolder;
+    color: #0f0f0f;
+    padding-left: .15rem;
+}
+
+.list_b>li>:nth-child(3)>img{
+    width: .09rem;
+    height: .17rem;
+    float: right;
+   padding: .1rem .1rem;
+}
+/* foo */
+.mnav{
+    width:100%;
+    height:.6rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0px;
+    background: rgba(255, 255, 255,1);
+
+}
+.mnav>a{
+    width:20%;
+    height:.6rem;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.mnav>a>img{
+    width:.2rem;
+    height:.23rem;
+    margin-top:.12rem;
+}
+.mnav>a>p{
+    font-size: .12rem;
+    text-align: center;
+    margin-top:.03rem;
+    color: #979797;
+}
+.mnav>.imga{
+    width:20%;
+    position: relative;
+}
+.mnav>.imga>img{
+    width:.32rem;
+    height:.36rem;
+    margin-top: 0;
+    position: absolute;
+    right: .22rem;
+    bottom: .3rem;
+}
+
+.mnav>.imga>p {
+    font-size: .11rem;
+    color: #3614B1;
+    width: 100%;
+    text-align: center;
+    margin-top: .38rem;
+}
